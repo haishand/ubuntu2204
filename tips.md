@@ -1,4 +1,6 @@
-ubuntu disable wayland:
+# some tips
+
+## ubuntu disable wayland:
 sudo nano /etc/gdm3/custom.conf
 
 
@@ -8,7 +10,7 @@ sudo nano /etc/gdm3/custom.conf
 图文并茂
 大一17周往前调
 
-ubuntu font:
+## ubuntu font:
 1、下载缺失的字体文件，然后复制到 Linux 系统中的 /usr/share/fonts 文件夹中。
 
 下载完成后，解压并进入目录中，继续执行：
@@ -24,7 +26,7 @@ $ sudo fc-cache
 4、重启 wps 即可，字体缺失的提示不再出现。
 
 
-Ubuntu22.04, EasyConnect:
+## Ubuntu22.04, EasyConnect:
 easyconnect 在 ubuntu20 下无法打开，需要降级 pango 来解决问题，默认 easyconnect 依赖的 pango 库：
 $ cd /usr/share/sangfor/EasyConnect
 $ ldd EasyConnect | grep pango
@@ -51,10 +53,10 @@ sudo ln -sn /usr/share/sangfor/EasyConnect/libpangoft2-1.0.so.0.4000.14 /usr/sha
 sudo ln -sn /usr/share/sangfor/EasyConnect/libpangocairo-1.0.so.0.4000.14 /usr/share/sangfor/EasyConnect/libpangocairo-1.0.so.0
 sudo ln -sn /usr/share/sangfor/EasyConnect/libpango-1.0.so.0.4000.14 /usr/share/sangfor/EasyConnect/libpango-1.0.so.0
 
-v2ray, qv2ray
+## v2ray, qv2ray
 install qv2ray on ubuntu store
 install v2ray core:
 unzip v2ray-linux-64.zip to ~/.config/qv2ray/vcore/
 
-onedrive:
+## onedrive:
 https://github.com/abraunegg/onedrive/
